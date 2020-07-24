@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hope - JAYL Comics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {
+  font-family: Arial;
+  margin: auto;
+  background-color: #333;
+}
+
+.jumbotron2 {
+  display: flex;
+  height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#more {display: none;}
+
+/*TEXT FADING IN ANIMATION*/
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent fixed-top">
+  <a class="navbar-brand">JAYL Comics</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+
+      <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Comics
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="shorts.php">Short Comics</a>
+        <a class="dropdown-item" href="zodiac.html">Zodiac Madness</a>
+        <a class="dropdown-item" href="feature.html">Featured Stories</a>
+      </div>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Features
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="tchoukball.html">Tchoukball!</a>
+        <a class="dropdown-item" href="hope.html">Hope</a>
+      </div>
+    </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.php">Contact</a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/jonathan.ang.102/">
+        <i class="fa fa-facebook mr-1"></i></a>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/jonathan_ang_102/">
+        <i class="fa fa-instagram"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script type="text/javascript">
+$(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 590);
+});
+</script>
+
+<div class="jumbotron2 jumbotron-fluid" style="background-image: url('cover/dance.jpg'); 
+background-size: cover;">
+<div class="fade-in" style="font-family: Calibri, serif; font-weight: bold;
+  margin-left: 5%; margin-top: 12%; color: #fff;">
+  <div class="container">
+
+    <h1 style="font-size: 80px;">Hope</h1>
+
+<div style="background: rgba(0,0,0,.6); width: 90%; padding: 20px; border-radius: 5px;">
+<h2>Comic Description</h2>
+<p>The origin tale of a bright cheerleader, Hope Chan.<span id="dots">...</span>
+<span id="more"> Explore her origin story of how she came to enjoy dancing and culture appreciation, which contributes to her interest in cheerleading.</span></p>
+<button onclick="myFunction()" id="myBtn" class="btn btn-light">Read more</button>
+</div>
+
+</div>
+  </div>
+</div>
+
+
+<br>
+<div class="container-fluid">
+<div class="row">
+
+<script>
+var i;
+for (i = 1; i < 32; i++) {
+  document.write("<div class=\"col-xl-4\"><img src=\"Hope's Story/h" + i + ".jpg\" style=\"width:100%; margin-top: 20px;\"></div>");
+}
+</script>
+
+</div>  
+
+<hr>
+<h4 style="color: #fff;"><center>End of Comic.</center></h4>
+
+</div>
+
+
+<br><br>
+<!-- Footer -->
+<footer class="page-footer font-small" style="background-color: #2b2a2a; color: #fff;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">About JAYL Comics</h6><br>
+        <p>JAYL Comics is dedicated to sharing happiness through simple
+        hand-drawn comics that imitate real events and how to make people 
+        laugh and be motivated through meaningful comics.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Comic Products</h6><br>
+        <p>
+          <a href="shorts.php">Short Comics</a>
+        </p>
+        <p>
+          <a href="zodiac.html">Zodiac Madness</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Story Comics</h6><br>
+        <p>
+          <a href="tchoukball.html">Tchoukball!</a>
+        </p>
+        <p>
+          <a href="hope.html">Hope</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6><br>
+        <p>
+          <i class="fas fa-home mr-3"></i> Penang, Malaysia</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> jonathanang4978@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> 019-463-8900</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5" style="text-align: center">
+        <p>You can also follow my comics through these mediums:</p>
+        <div class="mb-5 flex-center">
+
+          <!-- Facebook -->
+          <a class="fb-ic" href="https://www.facebook.com/jonathan.ang.102">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic" href="https://www.instagram.com/jonathan_ang_102/">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <p> Copyright &copy; 2020 by Jonathan Ang. </p>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
